@@ -5,6 +5,7 @@ import com.xiaoma.findwait.WebElementUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,7 +13,7 @@ import java.util.List;
 /**
  * Created by Administrator on 2018/02/06 0006.
  */
-public class Actions extends SeleniumDriver{
+public class ActionsUtils extends SeleniumDriver{
 
     //点击按钮
     public static void clickButtons(By by){
@@ -43,4 +44,11 @@ public class Actions extends SeleniumDriver{
         }
         return al;
     }
+
+    public static void doubleClick(By by){
+        Actions actions = new Actions(driver);
+        WebElement element = WebElementUtils.findElement(by);
+        actions.doubleClick(element);
+    }
+
 }
