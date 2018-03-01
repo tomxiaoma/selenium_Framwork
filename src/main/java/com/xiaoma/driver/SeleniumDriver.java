@@ -1,5 +1,6 @@
 package com.xiaoma.driver;
 
+import com.xiaoma.log4j.LoggerControler;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
@@ -12,6 +13,7 @@ public class SeleniumDriver {
 
    public static WebDriver driver;
 
+   final static LoggerControler logger = LoggerControler.getLoggerControler(SeleniumDriver.class);
     public static WebDriver open(String browser){
         String path = System.getProperty("user.dir");
         if(browser.equals("chrome")){
@@ -24,6 +26,7 @@ public class SeleniumDriver {
             driver = new FirefoxDriver();
         }else {
             System.err.println("你传入的浏览器错误"+browser);
+            logger.error("您输入"+browser+"的浏览器错误");
         }
         return driver;
     }
