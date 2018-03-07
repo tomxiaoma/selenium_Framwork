@@ -28,18 +28,12 @@ public class TestDemo {
     @DataProvider(name = "testData")
     public Object[][] data() {
         ExcelUtil testcase = new ExcelUtil();
-        return testcase.testData("F://1a.xlsx");
+        return testcase.testData("F:\\a.xlsx");
     }
 
     @Test(dataProvider = "testData")
     public void testCase(HashMap<String, String> data) {
-        String fileName = data.get("excelName");
-        String bpSheetName = data.get("Benefits Package Sheet");
-        int bpRowNum = Integer.parseInt(data.get("BP sheet RowNum"));
-        String csvSheetName = data.get("Cost Share Variances Sheet");
-        int csvRowNum = Integer.parseInt(data.get("CSV Sheet RowNum"));
-        String hiosPlanID = data.get("HIOS Plan ID");
-        String isPass = data.get("isPass");
-        System.out.print(fileName);
+        System.out.println(data.get("acct"));
+        System.out.println(data.get("pwd"));
     }
 }
