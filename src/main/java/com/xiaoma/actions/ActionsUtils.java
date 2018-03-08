@@ -15,7 +15,7 @@ import java.util.List;
  * Created by Administrator on 2018/02/06 0006.
  */
 public class ActionsUtils extends SeleniumDriver{
-    final static LoggerControler logger = LoggerControler.getLoggerControler(ActionsUtils.class);
+   private final static LoggerControler logger = LoggerControler.getLoggerControler(ActionsUtils.class);
 
     //点击按钮
     public static void clickButtons(By by){
