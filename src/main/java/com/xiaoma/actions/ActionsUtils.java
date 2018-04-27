@@ -49,6 +49,7 @@ public class ActionsUtils extends SeleniumDriver{
         return al;
     }
 
+    //双击操作
     public static void doubleClick(By by){
         Actions actions = new Actions(driver);
         WebElement element = WebElementUtils.findElement(by);
