@@ -24,7 +24,7 @@ public class ActionsUtils extends SeleniumDriver{
         logger.info("您点击的元素是"+by);
     }
 
-    //文本框中输入值
+    //文本框中输入的值
     public static void sendKeys(By by,String text){
         WebElement element = WebElementUtils.findElement(by);
         element.clear();
