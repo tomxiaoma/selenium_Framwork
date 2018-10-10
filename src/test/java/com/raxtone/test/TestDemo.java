@@ -9,9 +9,9 @@ import java.util.HashMap;
 /**
  * Created by Administrator on 2018/03/05 0005.
  */
-public class TestDemo {
+/*public class TestDemo {
 
-   /* public static int foo(int i){
+   *//* public static int foo(int i){
         if(i<=0)
             return 0;
         else if(i>0 && i<=2)
@@ -23,7 +23,7 @@ public class TestDemo {
     public void fun(){
         int s = TestDemo.foo(6);
         System.out.print(s);
-    }*/
+    }*//*
 
     @DataProvider(name = "testData")
     public Object[][] data() {
@@ -36,4 +36,4 @@ public class TestDemo {
         System.out.println(data.get("acct"));
         System.out.println(data.get("pwd"));
     }
-}
+}*/
