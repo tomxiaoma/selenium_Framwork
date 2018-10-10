@@ -15,7 +15,7 @@ public class TestLog4j {
 
         logger.info("这是info");
 
-        logger.error("这是error");
+        //logger.error("这是error");
 
     }
 
